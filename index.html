@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier It - Support & FAQ</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --tier-s: #FF7F7F;
+            --tier-a: #FFBF7F;
+            --tier-b: #FFDF7F;
+            --tier-c: #FFFF7F;
+            --tier-d: #BFFF7F;
+            --tier-f: #7FBFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tier-badges {
+            display: inline-flex;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .tier-badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 14px;
+            color: #000;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-primary);
+        }
+
+        .faq-item {
+            margin-bottom: 18px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0d1117;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-top: 14px;
+            transition: background-color 0.15s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="tier-badges">
+                <div class="tier-badge" style="background: var(--tier-s);">S</div>
+                <div class="tier-badge" style="background: var(--tier-a);">A</div>
+                <div class="tier-badge" style="background: var(--tier-b);">B</div>
+                <div class="tier-badge" style="background: var(--tier-c);">C</div>
+                <div class="tier-badge" style="background: var(--tier-d);">D</div>
+                <div class="tier-badge" style="background: var(--tier-f);">F</div>
+            </div>
+            <h1>Tier It Support</h1>
+            <p class="tagline">Frequently asked questions and support for Tier It on iOS & iPadOS.</p>
+        </header>
+
+        <!-- FAQ Section -->
+        <section class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I import images?</div>
+                <div class="faq-answer">
+                    Tap the <strong>+</strong> button in the bottom dock. You can import multiple photos directly from your Photos Library, or choose a folder or <code>.zip</code> archive from the Files app.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I rank items on the board?</div>
+                <div class="faq-answer">
+                    You can drag the <strong>Next Up</strong> thumbnail directly onto any tier row or between existing items. Alternatively, tap any of the quick-rank buttons (<strong>S, A, B, C, D, F</strong>) at the bottom to assign the active item with one tap.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I move or unrank an item already on the board?</div>
+                <div class="faq-answer">
+                    Simply tap and drag the item to a new position or tier. You can also tap the item to open the quick-action bar at the bottom, where you can tap a new tier, unrank it back to the queue, or delete it.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I customize tier labels or hide tiers?</div>
+                <div class="faq-answer">
+                    Tap the <strong>•••</strong> menu in the top right corner and select <strong>Tier Settings</strong> (or tap any tier label header directly). Here you can rename labels and toggle visibility for any tier.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I remove the export watermark?</div>
+                <div class="faq-answer">
+                    Tap the <strong>•••</strong> menu and select <strong>Remove Watermark</strong> to unlock clean, unbranded exports via a one-time in-app purchase.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I restore my purchase on a new device?</div>
+                <div class="faq-answer">
+                    Open the <strong>•••</strong> menu, tap <strong>Remove Watermark</strong>, and select <strong>Restore Purchases</strong> at the bottom of the sheet.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data private?</div>
+                <div class="faq-answer">
+                    Yes, 100%. All tier lists, images, and preferences are stored locally on your device using Apple's SwiftData. Tier It has no ads, no trackers, and no external servers.
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Support Section -->
+        <section class="card contact-box">
+            <h2>Need Further Assistance?</h2>
+            <p class="faq-answer">Have feedback, encountered a bug, or have a feature request? We'd love to hear from you.</p>
+            <a href="mailto:support@tierit.app" class="btn">Contact Support</a>
+        </section>
+
+        <!-- Privacy Section -->
+        <section class="card">
+            <h2>Privacy Policy Summary</h2>
+            <p class="faq-answer">
+                <strong>Tier It</strong> does not collect, transmit, store, or share any personal data, identifiers, analytics, or user photos. All content created within the app resides exclusively on your device.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Tier It. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
