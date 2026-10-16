@@ -45,4 +45,4 @@ If this Privacy Policy is updated in the future, the revised policy will be comm
 
 If you have any questions or feedback regarding this policy, please contact:
 
-* **Email:** [support@yourdomain.com](mailto:lloyd.vu.dev@gmail.com)
+* **Email:** [lloyd.vu.dev@gmail.com](mailto:lloyd.vu.dev@gmail.com)
